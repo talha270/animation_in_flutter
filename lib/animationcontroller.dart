@@ -72,4 +72,7 @@ class AnimatedContainerController extends GetxController with GetTickerProviderS
     showFirst.value = !showFirst.value;
   }
 
+  // <--------------animated switcher------------------>
+  var isText = true.obs;
+  void toggleWidget() => isText.value = !isText.value;
 }

@@ -1,9 +1,11 @@
-import 'package:animation_in_flutter/animations/animatedcontainer.dart';
+import 'package:animation_in_flutter/animations/implicit_animation/animated_switcher.dart';
+import 'package:animation_in_flutter/animations/implicit_animation/implicit_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animationcontroller.dart';
 import 'animations/fade_animation.dart';
+import 'animations/implicit_animation/animated_position.dart';
 import 'animations/scale_animation.dart';
 import 'animations/slides_animation.dart';
 import 'animations/tween_animation.dart';
@@ -27,10 +29,12 @@ class MyApp extends StatelessWidget {
       ),
       home:
       // AnimatedContainerExample(),
+      // AnimatedPosition()
+      AnimatedSwitcherGetX()
       // FadeTransitionExample()
       // TweenAnimatedContainerExample()
       // ScaleTransitionExample()
-      SlideTransitionExample()
+      // SlideTransitionExample()
     );
   }
 }
@@ -43,6 +47,7 @@ class MyApp extends StatelessWidget {
 // AnimatedOpacity
 // AnimatedAlign
 // AnimatedCrossFade
+
 // Explicit Animations: Gain control over the animation sequence.
 // AnimationController
 // Tween
