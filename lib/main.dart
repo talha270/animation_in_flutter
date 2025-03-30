@@ -1,13 +1,18 @@
-import 'package:animation_in_flutter/animations/implicit_animation/animated_switcher.dart';
-import 'package:animation_in_flutter/animations/implicit_animation/implicit_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animationcontroller.dart';
-import 'animations/fade_animation.dart';
+
+import 'animations/implicit_animation/animated_align.dart';
+import 'animations/implicit_animation/animated_container.dart';
+import 'animations/implicit_animation/animated_opacity.dart';
+import 'animations/implicit_animation/animated_padding.dart';
 import 'animations/implicit_animation/animated_position.dart';
-import 'animations/scale_animation.dart';
-import 'animations/slides_animation.dart';
+import 'animations/implicit_animation/animated_switcher.dart';
+import 'animations/implicit_animation/combine/container_and_align.dart';
+import 'animations/implicit_animation/combine/container_and_opacity.dart';
+import 'animations/implicit_animation/combine/multiple.dart';
+import 'animations/implicit_animation/combine/rotation_and_scale.dart';
 import 'animations/tween_animation.dart';
 
 void main() {
@@ -28,13 +33,21 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home:
+      // AnimatedPaddingExample(),
+      // AnimatedAlignExample(),
+      // AnimatedOpacityExample(),
+      // AnimatedContainerExample()
       // AnimatedContainerExample(),
       // AnimatedPosition()
-      AnimatedSwitcherGetX()
+      // AnimatedSwitcherGetX()
       // FadeTransitionExample()
       // TweenAnimatedContainerExample()
       // ScaleTransitionExample()
       // SlideTransitionExample()
+      // CombinedAnimationExample(),
+      // MoveResizeExample()
+      // RotateScaleExample()
+        ComplexAnimationExample()
     );
   }
 }
