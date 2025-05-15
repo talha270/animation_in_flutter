@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../animationcontroller.dart';
+import '../../animationcontroller.dart';
+
 
 class ScaleTransitionExample extends StatelessWidget {
   final controller = Get.find<AnimatedContainerController>();

@@ -1,10 +1,9 @@
+import 'package:animation_in_flutter/animations/explicit_animation/controllers/fade_animation_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../animationcontroller.dart';
-
 class FadeTransitionExample extends StatelessWidget {
-  final AnimatedContainerController controller = Get.put(AnimatedContainerController());
+  final FadeAnimationController controller = Get.put(FadeAnimationController());
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +14,10 @@ class FadeTransitionExample extends StatelessWidget {
         children: [
           Center(
             child: AnimatedBuilder(
-              animation: controller.animation,
+              animation: controller.animationController,
               builder: (context, child) {
                 return FadeTransition(
-                  opacity: controller.animation,
+                  opacity: controller.animationController,
                   child:GestureDetector(
                     onTap: controller.startAnimation,
                     child: Container(

@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 
 import 'animationcontroller.dart';
 
+import 'animations/explicit_animation/fade_animation.dart';
+import 'animations/explicit_animation/scale_animation.dart';
 import 'animations/implicit_animation/animated_align.dart';
 import 'animations/implicit_animation/animated_container.dart';
 import 'animations/implicit_animation/animated_opacity.dart';
@@ -42,12 +44,12 @@ class MyApp extends StatelessWidget {
       // AnimatedSwitcherGetX()
       // FadeTransitionExample()
       // TweenAnimatedContainerExample()
-      // ScaleTransitionExample()
+      ScaleTransitionExample(),
       // SlideTransitionExample()
       // CombinedAnimationExample(),
       // MoveResizeExample()
       // RotateScaleExample()
-        ComplexAnimationExample()
+      //   ComplexAnimationExample()
     );
   }
 }
